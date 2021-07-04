@@ -1,0 +1,221 @@
+/** CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+/** Custom Scrollbar */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #dde847;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #20c997;
+}
+
+section {
+  padding-top: 0rem;
+  margin-bottom: rem;
+}
+
+h2 {
+  text-shadow: 2px 2px 3px #000;
+  color: #d6eb1d;
+}
+
+/** Navbar */
+.navbar,
+.dropdown-menu {
+  background-color: #f1fc5d;
+}
+
+/** Jumbotron/Hero */
+#kampus {
+  text-shadow: 2px 2px 3px #f1fc5d;
+}
+
+.hero_img {
+  padding-top: 20px;
+}
+
+.moto {
+  font-family: "Italianno";
+  font-size: 2rem;
+  color: #f1fc5d;
+  text-shadow: 2px 2px 3px #000;
+}
+
+.hero {
+  padding-top: 5rem;
+  background-color: #20c997;
+  color: #f1f1f1;
+}
+
+.btn {
+  background-color: #dde847;
+  color: #000;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+/** About Us */
+.about_us {
+}
+
+.about_card {
+  margin: 2rem;
+  padding-top: 1rem;
+  background-color: #ececec;
+  color: #3b27ba;
+  border-top: 5px solid #3b27ba;
+  border-bottom: 1px solid #3b27ba;
+  border-left: 1px solid #3b27ba;
+  border-right: 1px solid #3b27ba;
+}
+
+.about_card:hover {
+  border-top: 5px solid #dde847;
+  border-bottom: 1px solid #dde847;
+  border-left: 1px solid #dde847;
+  border-right: 1px solid #dde847;
+}
+
+.about_card img {
+  margin-bottom: 1rem;
+}
+
+/** Carousel  */
+.carousel {
+}
+
+.product {
+  background-color: #20c997;
+  padding-top: 0rem;
+}
+
+.carousel-link {
+  color: #dde847;
+  text-shadow: 2px 2px 3px #000;
+}
+
+.carousel-link:hover {
+  color: #ececec;
+}
+
+.carousel-item {
+  height: 90vh;
+  border: 10px solid #20c997;
+}
+
+.carousel-item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  font-weight: bolder;
+  color: #d6eb1d;
+  position: absolute;
+  text-shadow: 3px 3px 3px #000;
+}
+
+/** Contact  */
+.contact_us {
+  padding-top: 0rem;
+}
+
+.btn_contact {
+  padding: 0.5rem 2rem;
+  background-color: #28a745;
+  color: #000;
+  border-radius: 5px;
+}
+
+.btn_contact a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.btn_contact a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn_contact:hover {
+  background-color: #dde847;
+  color: #f1f1f1;
+}
+
+/** Finds us maps  */
+.maps {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: -2rem;
+}
+
+/** Footer  */
+.footer {
+  background-color: #f1fc5d;
+}
+
+.copyright {
+}
+
+/** Mobile Responsive */
+@media only screen and (max-width: 1000px) {
+  .hero_img {
+  }
+
+  .carousel-item {
+    height: 100%;
+  }
+
+  .maps {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#scrollTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #555; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+  width: 40px;
+}
+
+#scrollTop:hover {
+  background-color: #3cb371; /* Add a dark-grey background on hover */
+}
